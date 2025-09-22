@@ -4,13 +4,19 @@ using namespace std;
 
 int main()
 {
-	int sum = 0;
+	int OnetoHundreadSum = 0;
+	int TripleOnetoHundreadSum = 0;
 
 	for (int i = 1; i <= 100; i++)
 	{
-		sum += i;
+		OnetoHundreadSum += i;
+		if (i % 3 == 0)
+		{
+			TripleOnetoHundreadSum += i;
+		}
 	}
-	cout << sum << endl;
+	cout << "1 ~ 100까지 합 : " << OnetoHundreadSum << endl;
+	cout << "1 ~ 100까지 존재하는 3의 배수 합 : " << TripleOnetoHundreadSum << endl;
 
 	return 0;
 }
